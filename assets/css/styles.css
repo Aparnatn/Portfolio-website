@@ -415,7 +415,7 @@ img{
 .skills_header{
     display:flex;
     align-items:center;
-    margin-bottom: var(--mb-0-25);
+    margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
 .skills_icon,
@@ -428,7 +428,7 @@ img{
     margin-right: var(--mb-0-75);
 }
 .skills_title{
-    font-size: var(--h4-font-size);
+    font-size: var(--h3-font-size);
 }
 .skills_subtitle{
     font-size: var(--small-font-size);
@@ -436,14 +436,14 @@ img{
 }
 
 .skills_arrow{
-    margin-left:auto;
+    margin-left: auto;
     transition: .4s;
 }
 .skills_list{
     row-gap: 1.5rem;
     padding-left: 2.7rem;
 }
-.skills_title{
+.skills_titles{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
@@ -476,6 +476,7 @@ img{
 .skills_angular{
     width: 90%;
 }
+
 .skills_php{
     width: 80%;
 }
@@ -500,7 +501,7 @@ img{
     margin-bottom: var(--mb-2-5);
 }
 .skills_open .skills_arrow{
-    transform: rotate(-180deg)
+    transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
 .qualification_tabs{
