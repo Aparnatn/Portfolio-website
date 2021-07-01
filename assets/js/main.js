@@ -6,11 +6,11 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
 if(navToggle){
    navToggle.addEventListener('click', () =>{
-     navMenu.classList.add('show-menu');  
+     navMenu.classList.add('show-menu')
    })
 }
 if(navClose){
-   navClose.addEventListener('click',() =>{
+   navClose.addEventListener('click', () =>{
      navMenu.classList.remove('show-menu') 
    })
 }

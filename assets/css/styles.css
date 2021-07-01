@@ -170,7 +170,7 @@ img{
 .header{
     width: 100%;
     position: fixed;
-    
+    bottom: 0;
     right: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -214,18 +214,15 @@ img{
     }
 }
   .nav_list {
-    grid-template-columns: repeat(6,6fr);
+    grid-template-columns: repeat(6, 6fr);
     gap: 2rem;  
 
 
   }  
-/* .nav_list {
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-} */
+
  .nav_link{
-    display: relative;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
@@ -303,8 +300,8 @@ img{
 }
 
 .home_subtitle{
-    font-size:var(--h3-font-size);
-    color:var(--text-color);
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
 }
@@ -382,7 +379,7 @@ img{
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
-    align-self:center;
+    align-self: center;
 
 }
 .about_description{
@@ -396,30 +393,30 @@ img{
     margin-bottom: var(--mb-2-5);
 }
 .about_info-title{
-    font-size:var(--h2-font-size);
+    font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
-    color:var(--title-color);
+    color: var(--title-color);
 }
 .about_info-name{
-    font-size:var(--smaller-font-size);
+    font-size: var(--smaller-font-size);
 }
 .about_info-title,
 .about_info-name{
-    display:block;
-    text-align:center;
+    display: block;
+    text-align: center;
 }
 .about_buttons{
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 /*==================== SKILLS ====================*/
 .skills_container{
-    row-gap:0;
+    row-gap: 0;
 
 }
 .skills_header{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
@@ -541,7 +538,7 @@ img{
     margin-bottom: var(--mb-1);
 }
 .qualification_calendar{
-    font-size:var(--smaller-font-size);
+    font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 
 }
@@ -572,7 +569,7 @@ img{
 
 .services_container{
     gap: 1.5rem;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 .services_content{
     position: relative;
@@ -587,7 +584,7 @@ img{
     box-shadow: 0 4px 8px rgba(0,0,0,.15);
 }
 .services_icon{
-    display:block;
+    display: block;
     font-size: 1.5rem;
     color: var(--first-color);
     margin-bottom: var(--mb-1);
@@ -607,12 +604,12 @@ img{
 }
 .services_modal{
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0,0,0,.5);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
@@ -633,7 +630,7 @@ img{
 
 }
 .services_modal-service{
-    display:flex;
+    display: flex;
 }
 /* Active Modal */
 .services_modal-title{
@@ -642,7 +639,7 @@ img{
     margin-bottom: var(--mb-1-5);
 }
 .services_modal-close{
-    position:absolute;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
@@ -654,8 +651,8 @@ img{
     margin-right: var(--mb-0-25);
 }
 .active-modal{
-    opacity:1;
-    visibility:visible;
+    opacity: 1;
+    visibility: visible;
 
 }
 /*==================== PORTFOLIO ====================*/
@@ -684,7 +681,7 @@ img{
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
-    content:'';
+    content: '';
 }
 .swiper-portfolio-icon{
     font-size: 2rem;
@@ -706,7 +703,7 @@ img{
  .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination-bullet{
-    outline:none;
+    outline: none;
 } 
 .project{
     text-align: center;
@@ -721,7 +718,7 @@ img{
     margin-bottom: var(--mb-0-75);
 }
 .project_description{
-    margin-bottom:var(--mb-1-5);
+    margin-bottom: var(--mb-1-5);
 
 }
 .project_title,
@@ -730,18 +727,18 @@ img{
 }
 
 .project_img{
-    width:232px;
-    justify-self:center;
+    width:  232px;
+    justify-self: center;
 }
 /*==================== PROJECT IN MIND ====================*/
-
+ 
 
 .contact_container{
-    row-gap:3rem;
+    row-gap: 3rem;
 
 }
 .contact_information{
-    display:flex;
+    display: flex;
     margin-bottom: var(--mb-2);
 }
 .contact_icon{
@@ -759,13 +756,13 @@ img{
 
 }
 .contact_content{
-    background-color:var(--input-color);
+    background-color: var(--input-color);
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
 }
 .contact_label{
     font-size: var(--small-font-size);
-    color:var(--title-color);
+    color: var(--title-color);
 }
 .contact_input{
     width: 100%;
@@ -773,8 +770,8 @@ img{
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     padding: .25rem .5rem .5rem 0;
 
 }
@@ -790,7 +787,7 @@ img{
    row-gap: 3.5rem; 
 }
 .footer_bg{
-    background-color:var(--first-color-second);
+    background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
 }
 .footer_title{
@@ -802,7 +799,7 @@ img{
     font-size: var(--small-font-size);
 }
 .footer_links{
-    display:flex;
+    display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
 
@@ -873,17 +870,17 @@ img{
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and(max-width: 350px){
+@media screen and (max-width: 350px){
     .container{
-       margin-left:var(--mb-1);
+       margin-left: var(--mb-1);
        margin-right: var(--mb-1);
     }
     .nav_menu{
         padding: 2rem .25rem 4rem;
     }
-    /* .nav_list{
-       column-gap: 5; 
-    } */
+     .nav_list{
+       column-gap: 0; 
+    }  
     .home_content{
         grid-template-columns: .25fr 3fr;
     }
@@ -895,7 +892,7 @@ img{
     }
     .qualification_data{
         gap: .5rem;
-    }
+    } 
     .services_container{
         grid-template-columns: max-content;
         justify-content: center;
@@ -945,7 +942,8 @@ img{
 }
 
 /* For large devices */
-@media screen and(min-width: 768px){
+@media screen and (min-width: 768px){
+    
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -963,13 +961,14 @@ img{
     }
     .header{
         top: 0;
-        bottom:0;
+        bottom: initial;
 
     }
     .header,
-    .main,
+    .main, 
     .footer_container{
         padding: 0 1rem;
+        
 
     }
     .nav{
@@ -981,14 +980,15 @@ img{
     .nav_icon,
     .nav_close,
     .nav_toggle{
-        display:none;
+        display: none;
     }
-    /* .nav_list{
+     .nav_list{
         display: relative;
         column-gap: 2rem;
-    } */
+    } 
     .nav_menu{
-        margin-left: auto;
+         margin-left: auto; 
+        
     }
     .change-theme{
         margin: 0;
@@ -1005,7 +1005,7 @@ img{
 
     }
     .home_scroll{
-        display:block;
+        display: block;
     
     }
     .home_scroll-button{
@@ -1016,11 +1016,11 @@ img{
         column-gap: 5rem;
     }
     .about_img{
-        width:350px;
+        width: 350px;
 
     }
     .about_description{
-        text-align:initial;
+        text-align: initial;
     }
     .about_info{
        justify-content: space-between;
@@ -1041,7 +1041,7 @@ img{
         grid-template-columns: .5fr;
     }
     .services_container{
-        grid-template-columns: repeat(3,218px);
+        grid-template-columns: repeat(3, 218px);
         justify-content: center;
     }
     .services_icon{
@@ -1099,32 +1099,12 @@ img{
 
     }
 }
-@media screen and(min-width: 1024px){
-    .header{
-        margin-right: 15px;
-    }
-    .nav_list {
-        grid-template-columns: repeat(6,6fr);
-        gap: 2rem; 
-    
-    
-     } 
-    
-    .nav_menu{
-        right: 15px;
-    }
-    .nav_link{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: var(--small-font-size);
-        color: var(--title-color);
-        font-weight: var(--font-medium);
-    }
+@media screen and (min-width: 1024px){  
+    .header
     .main,
     .footer_container{
        padding: 0;
-
+     
     }
     .home_blob{
         width: 320px;
