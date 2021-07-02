@@ -5,7 +5,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 4rem ;
+    --header-height: 3rem ;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -266,7 +266,7 @@ img{
 }
  
 .home_content{
-   grid-template-columns: .6fr 6fr; 
+   grid-template-columns: .5fr 3fr; 
    padding-top: 3.5rem;
    align-items: center;
 }
@@ -287,7 +287,7 @@ img{
     fill: var(--first-color);
 }
 .home_blob-img{
-     width: 170px;
+     width: 200px;
 }
 .home_data{
     grid-column: 1/3;
